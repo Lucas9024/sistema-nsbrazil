@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import {
-    BrowserRouter,
+    HashRouter,
     Routes,
     Route,
   } from "react-router-dom";
@@ -11,7 +11,6 @@ import RegisterUser from '../pages/RegisterUser';
 
 const RoutesApp = () => {
 
-
     const Private = ({Item}) => {
         const {signed} = useAuth();
         return signed > 0 ? <Item /> : <Login />
@@ -20,18 +19,15 @@ const RoutesApp = () => {
 
     return (
 
-    <BrowserRouter>
-    <Fragment>
+    <HashRouter>
     <Routes>
         <Route exact path='/home' element={< Private Item={Home} />}/>
         <Route path="/" element={<Login /> }/>
         <Route exact path="/signup" element={<RegisterUser /> }/>
         <Route path="*" element={<Login />}/>
     </Routes>
-
-    </Fragment>
     
-  </BrowserRouter>
+  </HashRouter>
     );
 }
 

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Button = styled.button`
  width: 100%;
- max-width: 200px;
+ max-width: 400px;
  padding: 12px;
  display: flex;
  align-items: center;

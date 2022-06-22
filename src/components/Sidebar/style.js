@@ -17,3 +17,7 @@ height: 100px;
 object-fit: contain;
 
 `;
+export const Label = styled.label`
+    font-size: 20px;
+    color: #1b1b1b;
+`;

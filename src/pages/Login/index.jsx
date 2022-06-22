@@ -49,9 +49,7 @@ function Login(){
                 />
                 <Button Text="Acessar" onClick={handleStart}/>
                 <C.LabelError>{error}</C.LabelError>
-                <C.LabelSignup>
-                    <Link to="/signup">registrar</Link>
-                </C.LabelSignup>
+                
 
             </C.Content>
         </C.Container>
